@@ -3,7 +3,7 @@
 
 A simple bytebeat music visualizer and generator with Lua formula input.
 
-![Screenshot of Byt-t-t-eer](2025-03-20 12-03.gif) 
+![Screenshot of Byt-t-t-eer](2025-03-20.gif) 
 
 ## Features
 
