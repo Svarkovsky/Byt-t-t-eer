@@ -156,7 +156,7 @@ static int func_ready = 0;
 static SDL_mutex *lua_mutex = NULL;
 
 // *** PRESET FORMULAS ***
-#define NUM_PRESET_FORMULAS 18
+#define NUM_PRESET_FORMULAS 25
 
 char preset_formulas[NUM_PRESET_FORMULAS][MAX_INPUT_LEN] = {
     "bit32.band(bit32.bor(bit32.bdiv(30000, bit32.band(t, 4095)), bit32.rshift(bit32.bmul(bit32.bmul(t, 5), bit32.band(bit32.band(bit32.rshift(t, 12), 7), bit32.rshift(bit32.bsub(0, t), 10))), bit32.band(bit32.rshift(t, 8), 3))), 128)", // 1
@@ -177,6 +177,13 @@ char preset_formulas[NUM_PRESET_FORMULAS][MAX_INPUT_LEN] = {
     "-t*(0xCA98CA98>>(-t>>9&30)&15)|-t>>8",                                                                           // 16
     "t*t>>9|t*(t>>16)|t>>4",                                                                                         // 17
     "t*(t>>12)<<(-t>>10&7)&-t>>2"                                                                                     // 18
+    "t*((t>>12|t>>8)&63&t>>4)"											     // 19
+    "(43*(t|t>>11)&255)*(8|~t>>6&55)>>6" 									     // 20
+    "(t<<1&t*3&-t>>5&t>>10)-1"  										     // 21
+    "(t*(2&t>>10|(t>>10&18)-8)&128)*(-t>>2&255)>>7"                                                                  // 22
+    "(2*t&255)*(-t>>6&t>>7)>>8|t&t>>1|t&t>>1"          								     // 23
+    "t>>3&127|t>>4&128|t>>3&128"                  								     // 24
+    "-(3*t&t>>13&t>>6)*t>>7" 										             // 25
 };
 
 int current_preset_index = 0;
