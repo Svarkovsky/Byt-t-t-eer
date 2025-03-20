@@ -1,4 +1,4 @@
-```markdown
+
 # Byt-t-t-eer - Bytebeat Generator
 
 A simple bytebeat music visualizer and generator with Lua formula input.
@@ -113,4 +113,4 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE.
 ## Copyright
 
 Copyright (c) Ivan Svarkovsky - 2025
-```
+
