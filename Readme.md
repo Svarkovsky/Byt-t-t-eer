@@ -114,11 +114,3 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE.
 
 Copyright (c) Ivan Svarkovsky - 2025
 ```
-
-**To use this README:**
-
-1.  **Save the text above as `README.md`** in the same directory as your `bytebeat.c` and other source files.
-2.  **(Optional):** Replace `![Screenshot of Byt-t-t-eer](screenshot.png)` with an actual screenshot of your program if you have one, and make sure the `screenshot.png` file is also in the same directory (or adjust the path accordingly).
-
-This README provides a good overview of the program, instructions for compilation and usage, and license information, making it helpful for anyone interested in using or contributing to your bytebeat generator.
-
